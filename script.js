@@ -67,6 +67,13 @@ const jobs = [
     description:
       "Support marketing campaigns and create digital content."
   }
+   {
+    title: "Chef de parti (hot or cold section)",
+    company: "Latin American cuisine",
+    location: "Beirut, Naccache",
+    salary: "Sarting 850$ / month",
+    time: "3pm - 12am",
+  },
 ];
 
 
