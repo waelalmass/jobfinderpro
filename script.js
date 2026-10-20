@@ -66,7 +66,7 @@ const jobs = [
     type: "Full-time",
     description:
       "Support marketing campaigns and create digital content."
-  }
+  },
    {
     title: "Chef de parti (hot or cold section)",
     company: "Latin American cuisine",
@@ -126,6 +126,7 @@ function displayJobs() {
         job.location,
         job.description,
         job.type,
+        job.time,
         job.salary
       ].join(" ").toLowerCase();
 
