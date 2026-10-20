@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find jobs and career opportunities with JobFinder Pro.">
+  <title>JobFinder Pro | Find Your Future</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a href="#" class="logo">JobFinder<span>Pro</span></a>
+    <a href="#jobs" class="nav-link">Explore Jobs</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+        <h1>Find a job that<br><span>moves you forward.</span></h1>
+        <p>Discover opportunities, explore careers, and take your next step.</p>
+
+        <form id="searchForm" class="search-box">
+          <input id="searchInput" type="search"
+            placeholder="Job title, company or city..."
+            aria-label="Search jobs">
+          <button type="submit">Search Jobs</button>
+        </form>
+
+        <p class="hero-note">Explore opportunities across different industries.</p>
+      </div>
+      <div class="hero-decoration">
+        <div class="floating-card">
+          <span class="check">✓</span>
+          <div>
+            <strong>Your future awaits</strong>
+            <p>Discover your next opportunity</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="jobs" class="jobs-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">CAREER OPPORTUNITIES</span>
+          <h2>Latest Jobs</h2>
+          <p>Find an opportunity that matches your goals.</p>
+        </div>
+        <span id="jobCount" class="job-count">0 jobs</span>
+      </div>
+
+      <div class="filters">
+        <select id="typeFilter" aria-label="Filter by job type">
+          <option value="all">All job types</option>
+          <option value="Full-time">Full-time</option>
+          <option value="Part-time">Part-time</option>
+          <option value="Internship">Internship</option>
+          <option value="Remote">Remote</option>
+        </select>
+        <button id="resetButton" class="reset-button" type="button">
+          Reset filters
+        </button>
+      </div>
+
+      <div id="jobsGrid" class="jobs-grid"></div>
+      <p id="emptyMessage" class="empty-message" hidden>
+        No jobs found. Try a different search.
+      </p>
+    </section>
+
+    <section class="cta">
+      <span class="eyebrow">YOUR CAREER, YOUR FUTURE</span>
+      <h2>Every great career starts somewhere.</h2>
+      <p>Explore the opportunities and find your next step.</p>
+      <a href="#jobs" class="cta-button">Explore Jobs →</a>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#" class="logo">JobFinder<span>Pro</span></a>
+    <p>© <span id="year"></span> JobFinder Pro. All rights reserved.</p>
+  </footer>
+  <div id="jobModal" class="job-modal" hidden>
+  <div class="modal-backdrop" data-close-modal></div>
+
+  <section class="modal-content" role="dialog"
+    aria-modal="true" aria-labelledby="modalTitle">
+
+    <button id="closeModal" class="close-modal"
+      type="button" aria-label="Close">✕</button>
+
+    <span class="eyebrow">JOB DETAILS</span>
+    <h2 id="modalTitle">Job Title</h2>
+    <p id="modalCompany" class="company-name"></p>
+
+    <div class="modal-info">
+      <p><strong>Location:</strong> <span id="modalLocation"></span></p>
+      <p><strong>Salary:</strong> <span id="modalSalary"></span></p>
+      <p><strong>Job type:</strong> <span id="modalType"></span></p>
+    </div>
+
+    <h3>About this job</h3>
+    <p id="modalDescription" class="job-description"></p>
+
+    <a id="modalApply" class="cta-button" href="#">
+      Apply Now →
+    </a>
+  </section>
+</div>
+</body>
+</html>
+</body>
+</html>
