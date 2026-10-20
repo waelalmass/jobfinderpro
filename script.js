@@ -70,10 +70,13 @@ const jobs = [
    {
     title: "Chef de parti (hot or cold section)",
     company: "Latin American cuisine",
-    location: "Beirut, Naccache",
-    salary: "Sarting 850$ / month",
-    time: "3pm - 12am",
+    location: "Naccache, Beirut",
+    salary: " starting 850$ / month",
+    type: " 3pm - 12am",
+    description:
+      "."
   },
+  
 ];
 
 
